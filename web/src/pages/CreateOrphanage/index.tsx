@@ -55,13 +55,12 @@ export default function CreateOrphanage() {
 			return;
 		}
 		const selectedImages = Array.from(event.target.files);
-		setImages(selectedImages);
+		setImages([...images, ...selectedImages]);
 
 		const selectedImagesPreview = selectedImages.map((image) => {
 			return URL.createObjectURL(image);
 		});
-
-		setPreviewImages(selectedImagesPreview);
+		setPreviewImages([...previewImages, ...selectedImagesPreview]);
 	}
 	return (
 		<Container id="page-create-orphanage">

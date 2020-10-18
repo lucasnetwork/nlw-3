@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 import { FiPlus, FiArrowRight } from 'react-icons/fi';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet';
 
-import mapMakerImg from '../images/mapmake.svg';
-import '../styles/pages/orphanegasMap.css';
-import mapIcon from '../utils/mapIcon';
-import api from '../services/api';
+import mapMakerImg from '../../images/mapmake.svg';
+import mapIcon from '../../utils/mapIcon';
+import api from '../../services/api';
+import Container, { Header } from './styles';
 
 interface Orphanage {
 	id: number;
@@ -27,8 +27,8 @@ function OrphanagesMap() {
 		getOrphanages();
 	}, []);
 	return (
-		<div id="page-map">
-			<aside>
+		<Container>
+			<Header>
 				<header>
 					<img src={mapMakerImg} alt="map" />
 
@@ -40,7 +40,7 @@ function OrphanagesMap() {
 					<strong>Rio do Sul</strong>
 					<span>Santa catarina</span>
 				</footer>
-			</aside>
+			</Header>
 			<Map
 				center={[-20.5359768, -54.6180158]}
 				zoom={15}
@@ -73,7 +73,7 @@ function OrphanagesMap() {
 			<Link to="orphanages/create" className="create-orphanage">
 				<FiPlus size={32} color="#fff" />
 			</Link>
-		</div>
+		</Container>
 	);
 }
 
