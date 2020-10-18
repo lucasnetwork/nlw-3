@@ -38,6 +38,7 @@ module.exports = {
     "react/forbid-prop-types": "off",
 		"react/prop-types":"off",
 		"no-use-before-define":"off",
-		"react/jsx-filename-extension":["warn",{extensions:[".tsx",".ts"]}]
+		"react/jsx-filename-extension":["warn",{extensions:[".tsx",".ts"]}],
+		"@typescript-eslint/naming-convention":"off"
   },
 };
