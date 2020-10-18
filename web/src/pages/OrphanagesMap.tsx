@@ -21,7 +21,6 @@ function OrphanagesMap() {
 	useEffect(() => {
 		async function getOrphanages() {
 			const response = await api.get('orphanages');
-
 			setOrphanages(response.data);
 		}
 

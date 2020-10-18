@@ -7,7 +7,7 @@ import { FiPlus } from 'react-icons/fi';
 import Sidebar from '../../components/Sidebar';
 import mapIcon from '../../utils/mapIcon';
 import api from '../../services/api';
-import Container, { FormContainer, InputBlock } from './styles';
+import Container, { ButtonConfirm, FormContainer, InputBlock } from './styles';
 
 export default function CreateOrphanage() {
 	const [position, setPosition] = useState({ latitude: 0, longitude: 0 });
@@ -173,13 +173,11 @@ export default function CreateOrphanage() {
 						</InputBlock>
 					</fieldset>
 
-					<button className="confirm-button" type="submit">
+					<ButtonConfirm className="confirm-button" type="submit">
 						Confirmar
-					</button>
+					</ButtonConfirm>
 				</FormContainer>
 			</main>
 		</Container>
 	);
 }
-
-// return `https://a.tile.openstreetmap.org/${z}/${x}/${y}.png`;
