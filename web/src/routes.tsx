@@ -6,6 +6,7 @@ import Landing from './pages/Landing';
 import Orphanage from './pages/Orphanage';
 import OrphanagesMap from './pages/OrphanagesMap';
 import Sucess from './pages/Sucess';
+import Login from './layouts/Login';
 
 function Routes() {
 	return (
@@ -17,6 +18,7 @@ function Routes() {
 				<Route exact path="/orphanages/:id" component={Orphanage} />
 				<Route exact path="/sucess" component={Sucess} />
 				<Route exact path="/remove/:name" component={Delete} />
+				<Route exact path="/login" component={Login} />
 			</Switch>
 		</BrowserRouter>
 	);
