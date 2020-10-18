@@ -1,15 +1,16 @@
 import React from 'react';
 
-import './styles/global.css'
+import './styles/global.css';
+import 'leaflet/dist/leaflet.css';
 
-import Routes from './routes'
+import Routes from './routes';
 
 function App() {
-  return (
-    <div className="App">
-      <Routes/>
-    </div>
-  );
+	return (
+		<div className="App">
+			<Routes />
+		</div>
+	);
 }
 
 export default App;
