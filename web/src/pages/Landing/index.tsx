@@ -1,12 +1,12 @@
 import React from 'react';
 import { FiArrowRight } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import '../styles/pages/landing.css';
-import logo from '../images/logo.svg';
+import logo from '../../images/logo.svg';
+import Container from './styles';
 
 function Landing() {
 	return (
-		<div id="page-landing">
+		<Container>
 			<div className="content-wrapper">
 				<img src={logo} alt="logo" />
 
@@ -23,7 +23,7 @@ function Landing() {
 					<FiArrowRight size={26} color="rgba(0,0,0,.6)" />
 				</Link>
 			</div>
-		</div>
+		</Container>
 	);
 }
 export default Landing;
