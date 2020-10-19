@@ -14,7 +14,7 @@ const Login: FunctionComponent = ({ children }) => {
 					<p>Rio do Sul Santa Catarina</p>
 				</div>
 			</div>
-			<div>{children}</div>
+			<div className="text">{children}</div>
 		</Container>
 	);
 };

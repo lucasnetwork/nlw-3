@@ -6,7 +6,7 @@ import Landing from './pages/Landing';
 import Orphanage from './pages/Orphanage';
 import OrphanagesMap from './pages/OrphanagesMap';
 import Sucess from './pages/Sucess';
-import Login from './layouts/Login';
+import Login from './pages/Login';
 
 function Routes() {
 	return (
